@@ -26,7 +26,9 @@ pip install flask
 
 
 Execução do servidor:
-python3 paulo_iphones_api.py
+python3 checkout_api.py
+
+curl -X POST http://127.0.0.1:5000/checkout -H "Content-Type: application/json" -d '{"a": 4500, "b": 200, "operacao": "subtracao"}'
 
 O serviço ficará disponível em http://127.0.0.1:5000/checkout.
 
